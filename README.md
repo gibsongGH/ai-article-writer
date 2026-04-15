@@ -6,6 +6,12 @@ A multi-agent article writing system built with the **OpenAI Agents SDK** and **
 
 ---
 
+## Examples
+
+- [View Markdown Healthcare](outputs/article.md)
+- [View Markdown Firefighting](outputs/article_20260415_152301.md)
+
+
 ## How It Works
 
 The system uses six specialised agents coordinated by an orchestrator:
