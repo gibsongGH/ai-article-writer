@@ -51,7 +51,11 @@ load_dotenv()  # loads .env locally; ignored on HF Spaces (uses Secrets instead)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MODEL = "gpt-4.1-mini"
-EXAMPLE_TOPIC = "How will AI be used in Healthcare in 2040?"
+EXAMPLE_TOPIC = (
+    "e.g. How will AI be used in Healthcare in 2040?\n"
+    "       The rise of vertical farming and food sustainability\n"
+    "       How quantum computing will transform cybersecurity?"
+)
 
 client = AsyncOpenAI()
 
@@ -510,15 +514,6 @@ with gr.Blocks(title="AI Article Writer") as demo:
         outputs=[status_out, image_out, article_out, download_md, download_html],
     )
 
-    gr.Examples(
-        examples=[
-            ["How will AI be used in Healthcare in 2040?"],
-            ["The future of renewable energy and climate change by 2050"],
-            ["How quantum computing will transform cybersecurity"],
-            ["The rise of vertical farming and food sustainability"],
-        ],
-        inputs=topic_input,
-    )
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
