@@ -472,7 +472,7 @@ async def run_article_writer(topic: str):
 # SECTION 5 — Gradio UI
 # ═══════════════════════════════════════════════════════════════════════════════
 
-with gr.Blocks(title="AI Article Writer", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="AI Article Writer") as demo:
 
     gr.Markdown(
         """
@@ -526,4 +526,4 @@ with gr.Blocks(title="AI Article Writer", theme=gr.themes.Soft()) as demo:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(theme=gr.themes.Soft())
