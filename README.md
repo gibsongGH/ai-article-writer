@@ -11,6 +11,9 @@ A multi-agent article writing system built with the **OpenAI Agents SDK** and **
 - [View Markdown Healthcare](outputs/Article.md)
 - [View Markdown Firefighting](outputs/article_20260415_152301.md)
 
+## Live Demo on Hugging Face
+
+[AI Article Writer](https://huggingface.co/spaces/gibsongHF/ai-article-writer)
 
 ## How It Works
 
@@ -81,9 +84,9 @@ Every run saves three files to the `outputs/` folder, all sharing the same times
 
 ```
 outputs/
-  article_*date_time*.png   ← DALL-E 3 image
-  article_*date_time*.md    ← raw Markdown article
-  article_*date_time*.html  ← styled HTML page with image embedded
+  article_date_time.png   ← DALL-E 3 image
+  article_date_time.md    ← raw Markdown article
+  article_date_time.html  ← styled HTML page with image embedded
 ```
 
 The `.html` file references the `.png` by relative filename, so keep them in the same folder when sharing.
