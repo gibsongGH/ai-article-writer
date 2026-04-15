@@ -1,3 +1,5 @@
+![Generated article image](article_image.png)
+
 # The Future of AI in Healthcare: 2040 and Beyond
 
 ## Executive Summary
