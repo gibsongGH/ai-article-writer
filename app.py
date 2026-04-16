@@ -521,4 +521,10 @@ with gr.Blocks(title="AI Article Writer") as demo:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
-    demo.launch(theme=gr.themes.Soft())
+    demo.launch(
+        theme=gr.themes.Soft(),
+        server_name="0.0.0.0",
+        server_port=7860,
+        share=True,
+        ssr_mode=False,
+    )
