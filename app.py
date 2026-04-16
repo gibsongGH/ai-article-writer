@@ -466,7 +466,7 @@ async def run_article_writer(topic: str):
         output_dir=Path("outputs"),
     )
 
-    status = f"✅ Done — written by {writer_name} | {run_timestamp}"
+    status = f"✅ Done — written by Greg Gibson's {writer_name} | {run_timestamp}"
     image_out = str(generated_image_path) if generated_image_path and Path(generated_image_path).exists() else None
 
     yield status, image_out, article_text, str(paths["md"]), str(paths["html"])
